@@ -1,6 +1,7 @@
 def run(fullname: str) -> str:
-    # TODO
-    return initials
+    surnames, names = fullname.split(',', 1)
+    words = [names.strip().split()[0]] + surnames.split()
+    return ''.join(f'{word[0].upper()}.' for word in words)
 
 
 # DO NOT TOUCH THE CODE BELOW
