@@ -44,6 +44,12 @@ class Cuenta:
     def get_titular(self):
         return self.__titular
 
+    def get_numero(self):
+        return self.__numero
+
+    def get_saldo(self):
+        return self.__saldo
+
     def set_movimiento(self, movimiento):
         self.__movimientos.append(movimiento)
         self.__saldo += movimiento.get_cantidad()
@@ -59,8 +65,20 @@ for cliente in clientes:
     print(cliente.get_nombre(),' DNI:',cliente.get_dni())
 
 # Creación de cuentas
-cuentaPepe = Cuenta(clientes[0])
-print(f'El saldo de {cuentaPepe.get_titular().get_nombre()} es de {cuentaPepe.get_saldo()} €')
+cuentas:list[Cuenta] = []
 
-cuentaPepe.set_movimiento(Movimiento('Ingreso inicial',1000))
-print(f'El saldo de {cuentaPepe.get_titular().get_nombre()} es de {cuentaPepe.get_saldo()} €') 
+cuentas.append(Cuenta(clientes[0]))
+print(f'El saldo de {cuentas[0].get_titular().get_nombre()} es de {cuentas[0].get_saldo()} €')
+
+cuentas[0].set_movimiento(Movimiento('Ingreso inicial',1000))
+cuentas[0].set_movimiento(Movimiento('Ingreso ',30))
+cuentas[0].set_movimiento(Movimiento('Retirada ',-500))
+print(f'El saldo de {cuentas[0].get_titular().get_nombre()} es de {cuentas[0].get_saldo()} €')
+
+# Listar las cuentas de clientes[0]
+print(clientes[0].get_dni())
+print(cuentas[0].get_titular().get_dni())
+for cuenta in cuentas:
+    if cuentas[0].get_titular().get_dni() == clientes[0].get_dni() :
+        print(f'D. {cuenta.get_titular().get_nombre()} es titular de la cuenta {cuenta.get_numero()} con un saldo de {cuenta.get_saldo()}') 
+
