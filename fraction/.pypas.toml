@@ -1,0 +1,13 @@
+version = "0.1.5"
+slug = "fraction"
+bundle = [ "/docs/README.pdf", "/tests", "/main.py", "/vendor.py"]
+backup_on_update = [ "/main.py",]
+exclude_from_zip = [ "*.pyc", ".DS_Store", "/.git", "*.bak", "*cache*", "/args.py",]
+
+[release_notes]
+"0.1.0" = "Primera versión"
+"0.1.1" = "Ignora carpetas cache al crear el zip"
+"0.1.2" = "Ignora args.py al comprimir ejercicio"
+"0.1.3" = "Refactoriza enunciado para simplificación de fracciones"
+"0.1.4" = "Añade conftest"
+"0.1.5" = "Añade testing sobre simplificación y tipos de datos"
