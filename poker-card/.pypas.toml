@@ -1,0 +1,15 @@
+version = "0.1.7"
+slug = "poker-card"
+bundle = [ "/docs/README.pdf", "/tests", "/main.py", "/vendor.py", "/data/glyphs.dat"]
+backup_on_update = [ "/main.py",]
+exclude_from_zip = [ "*.pyc", ".DS_Store", "/.git", "*.bak", "*cache*", "/args.py",]
+
+[release_notes]
+"0.1.0" = "Primera versión"
+"0.1.1" = "Ignora carpetas cache al crear el zip"
+"0.1.2" = "Ignora args.py al comprimir ejercicio"
+"0.1.3" = "Aclara método __eq__()"
+"0.1.4" = "Añade fichero faltante de glifos"
+"0.1.5" = "Aclara valor del AS en comparación de cartas"
+"0.1.6" = "Corrige igualdad de cartas en enunciado y tests"
+"0.1.7" = "Corrige error tipográfico en mensaje de excepción"
