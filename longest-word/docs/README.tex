@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{article}
+\input{../../.common/preamble.sty}
+
+\title{\textbf{La palabra más larga}}
+
+\begin{document}
+\maketitle
+
+Dado un fichero de texto encuentra la \textbf{palabra más larga}.
+
+\subsection*{Notas}
+
+\begin{itemize}
+    \item Si hay varias palabras con la misma longitud devuelve la última ocurrencia.
+    \item Ten en cuenta (únicamente) los siguientes símbolos como frontera de palabras:\\\textcolor{magenta}{\texttt{,.;:()}}
+\end{itemize}
+
+\subsection*{Ejemplo}
+
+\textit{Entrada}:
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    frame=single,
+    framesep=3mm,
+]{text}
+Python es un lenguaje de programación de alto nivel, interpretado y de
+tipado dinámico. Fue creado por Guido van Rossum y lanzado por primera
+vez en 1991. Su diseño enfatiza la legibilidad del código y la
+simplicidad, lo que lo hace accesible tanto para principiantes como para
+programadores experimentados. La sintaxis de Python es clara y concisa,
+lo que permite escribir código limpio y fácil de mantener.
+\end{minted}
+
+\textit{Salida}:\\
+
+La palabra más larga es: \textbf{experimentados}
+
+\end{document}
