@@ -11,13 +11,16 @@ class Personaje:
 
 
 class Guerrero(Personaje):
-    def __init__(self, nombre, nivel, puntos_vida, fuerza):
+    def __init__(self, nombre, nivel, puntos_vida, fuerza, armas="Sin armas"):
         super().__init__(nombre, nivel, puntos_vida)
         self.__fuerza = fuerza
+        # Si la cadena viene vacía o solo con espacios, asigna 'Sin armas'
+        self.__armas = armas.strip() if armas and armas.strip() else "Sin armas"
 
     def mostrar_info(self):
         super().mostrar_info()
         print(f"Fuerza: {self.__fuerza}")
+        print(f"Armas: {self.__armas}")
 
 
 class Mago(Personaje):
@@ -27,7 +30,8 @@ class Mago(Personaje):
 
     def mostrar_info(self):
         super().mostrar_info()
-        print(f"Mana: {self.__mana}")
+        print(f"Maná: {self.__mana}")
+
 
 class GestorPersonajes:
     def __init__(self):
@@ -68,7 +72,9 @@ while True:
         nivel = int(input("Nivel: "))
         vida = int(input("Puntos de vida: "))
         fuerza = int(input("Fuerza: "))
-        guerrero = Guerrero(nombre, nivel, vida, fuerza)
+        armas = input("Introduce las armas (presiona ENTER si no tiene): ")
+        
+        guerrero = Guerrero(nombre, nivel, vida, fuerza, armas)
         gestor.agregar_personaje(guerrero)
 
     elif opcion == "2":
@@ -87,4 +93,4 @@ while True:
         break
 
     else:
-        print("Opción no válida. Inténtalo de nuevo.")        
+        print("Opción no válida. Inténtalo de nuevo.")
