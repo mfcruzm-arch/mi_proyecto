@@ -1,0 +1,121 @@
+IdCliente;Género;Edad;Llamadas;Tiempo.enero;Tiempo.febrero;Monto;Espera;Opinión;Empresa
+P50417214;Femenino;26;4;27;26.1;89.7;0.8;Excelente;Entell
+P50417215;Masculino;33;2;30.1;20.5;88.8;0.4;Muy Bueno;Entell
+P50417216;Masculino;21;8;26;34.4;85.4;3.5;Bueno;Entell
+P50417217;Femenino;23;8;34.1;36.1;89;4.7;Pésimo;Entell
+P50417218;Masculino;34;1;30.1;28.9;77.1;2.2;Bueno;Entell
+P50417219;Femenino;29;6;30.7;20.9;97.8;5.1;Pésimo;Entell
+P50417220;Masculino;21;5;26.5;32;84;2.8;Regular;Entell
+P50417221;Femenino;40;5;28.3;29.8;84.2;5.8;Muy Bueno;Entell
+P50417222;Femenino;25;6;29.7;31.1;91.7;4.2;Excelente;Entell
+P50417223;Femenino;38;5;32.5;27.6;74.1;0.8;Regular;Entell
+P50417224;Femenino;35;4;24.7;29.9;88.8;9.5;Muy Bueno;Entell
+P50417225;Femenino;31;6;24.8;32.9;91.6;2.6;Pésimo;Entell
+P50417226;Femenino;28;7;32.2;23.7;80;4.5;Muy Bueno;Entell
+P50417227;Femenino;26;0;26.7;22.7;88.4;1.3;Bueno;Entell
+P50417228;Masculino;26;9;31.4;24.3;78.5;2.6;Muy Bueno;Entell
+P50417229;Femenino;33;5;31.1;30.1;88.3;5.5;Pésimo;Entell
+P50417230;Femenino;34;6;26.7;23.8;85.6;2.7;Bueno;Entell
+P50417231;Femenino;22;6;34.1;17.5;88.6;11.5;Pésimo;Entell
+P50417232;Femenino;26;6;27.2;29.9;78.8;0.5;Excelente;Entell
+P50417233;Femenino;39;7;28.4;36.3;81.6;1.3;Excelente;Entell
+A80117234;Masculino;31;0;49.6;31.8;86.3;5.3;Pésimo;Claros
+A80117235;Femenino;22;7;28.6;33;83.8;1.2;Muy Bueno;Claros
+A80117236;Femenino;28;4;37.3;31.7;90.7;1.7;Muy Bueno;Claros
+A80117237;Femenino;35;5;33.9;31.4;95.7;20.5;Pésimo;Claros
+A80117238;Masculino;22;3;38;26.9;99.3;3.3;Muy Bueno;Claros
+A80117239;Femenino;40;4;41.7;35.5;83.3;0.3;Regular;Claros
+A80117240;Femenino;34;1;38.3;39.9;97.3;1.7;Pésimo;Claros
+A80117241;Masculino;28;3;41.3;39.3;88.1;13.4;Pésimo;Claros
+A80117242;Masculino;28;5;39.2;39.1;81.9;10.1;Pésimo;Claros
+A80117243;Femenino;32;2;40.5;40;83.8;2.8;Excelente;Claros
+A80117244;Femenino;24;2;41.4;47.3;82.2;0.2;Excelente;Claros
+A80117245;Femenino;34;3;38.2;36.5;91.5;3.8;Pésimo;Claros
+A80117246;Femenino;20;3;48.6;37.5;82.8;16.5;Pésimo;Claros
+A80117247;Masculino;34;3;33.2;33.1;94.3;3.9;Pésimo;Claros
+A80117248;Femenino;20;2;41;36.1;96.5;26.6;Pésimo;Claros
+A80117249;Femenino;29;7;41.7;20.4;78.8;2.4;Muy Bueno;Claros
+A80117250;Masculino;31;4;37.8;41.7;83.3;27.9;Pésimo;Claros
+A80117251;Masculino;22;4;38.5;33.3;95.6;0.3;Muy Bueno;Claros
+A80117252;Masculino;38;4;44.1;26.3;78.3;8.8;Excelente;Claros
+A80117253;Femenino;36;5;37.9;38.8;87.8;1.1;Regular;Claros
+A80117254;Femenino;33;5;46.8;38;95.8;2.4;Bueno;Claros
+A80117255;Femenino;36;1;47.5;43;84.7;2.5;Bueno;Claros
+A80117256;Femenino;33;5;34.6;34.3;100.2;0.3;Muy Bueno;Claros
+A80117257;Masculino;23;8;47.5;37.4;82.5;2.7;Excelente;Claros
+A80117258;Masculino;35;2;35;42;82.6;22.7;Pésimo;Claros
+A80117259;Femenino;24;8;36.8;38.6;94.5;4.5;Bueno;Claros
+A80117260;Masculino;32;1;43.6;43.2;86.3;4.6;Bueno;Claros
+A80117261;Masculino;32;3;35.2;35.7;88.3;8.2;Excelente;Claros
+A80117262;Femenino;27;8;37.8;34.4;83.7;5.2;Regular;Claros
+A80117263;Masculino;37;4;37.7;43.1;83.8;4;Muy Bueno;Claros
+G58917264;Masculino;32;8;41.5;41.8;84.1;12.5;Pésimo;Movist
+G58917265;Masculino;33;7;50.3;48.5;83.2;23.7;Pésimo;Movist
+G58917266;Masculino;35;8;33.6;43.8;84.8;2.7;Regular;Movist
+G58917267;Masculino;39;9;52;45.5;98.9;36;Pésimo;Movist
+G58917268;Masculino;34;5;50.4;37;119.1;0.5;Excelente;Movist
+G58917269;Masculino;38;8;36.2;37.2;103.4;1.6;Excelente;Movist
+G58917270;Femenino;39;4;39.8;39.8;109.6;1.7;Regular;Movist
+G58917271;Femenino;36;5;43.2;45.8;97.5;18.5;Pésimo;Movist
+G58917272;Masculino;36;7;44.8;28.8;94.8;4.2;Excelente;Movist
+G58917273;Femenino;38;8;41.2;48;93.1;23.7;Pésimo;Movist
+G58917274;Masculino;24;10;53.8;32.8;108;5.3;Pésimo;Movist
+G58917275;Femenino;36;8;43.6;30.9;101;3.5;Pésimo;Movist
+G58917276;Femenino;27;6;40.7;36.4;89.6;3.2;Regular;Movist
+G58917277;Femenino;39;6;48.5;41.5;102.2;13;Pésimo;Movist
+G58917278;Femenino;31;6;57.7;41.6;106.7;0.4;Bueno;Movist
+G58917279;Masculino;35;3;46;47.4;104;8.8;Regular;Movist
+G58917280;Masculino;30;8;49.9;38.6;100.6;0.2;Bueno;Movist
+G58917281;Femenino;35;7;47.5;38.6;104.1;6.2;Pésimo;Movist
+G58917282;Masculino;29;2;59.6;41.8;78.9;13.6;Pésimo;Movist
+G58917283;Masculino;31;6;55;37.2;101.6;4;Regular;Movist
+G58917284;Masculino;28;6;32.6;39.8;114.6;0.5;Bueno;Movist
+G58917285;Masculino;25;7;37.6;43;102.9;11.2;Pésimo;Movist
+G58917286;Masculino;38;9;41.8;44.8;114.5;13;Pésimo;Movist
+G58917287;Masculino;37;5;62.2;37.9;106;0.8;Bueno;Movist
+G58917288;Masculino;32;4;45.6;37.1;100.6;2.2;Bueno;Movist
+G58917289;Femenino;37;7;48.6;38.9;103;4.8;Excelente;Movist
+G58917290;Masculino;25;5;39.7;38.5;110.5;2.2;Muy Bueno;Movist
+G58917291;Femenino;26;3;25.7;40.4;112.4;4;Regular;Movist
+G58917292;Masculino;40;4;40.4;31.4;90.7;16.9;Pésimo;Movist
+G58917293;Femenino;40;8;46.3;40.4;112.5;1.5;Muy Bueno;Movist
+G58917294;Masculino;30;4;43.6;37.6;108.3;2.8;Excelente;Movist
+G58917295;Masculino;27;6;39.7;34.5;114.5;4.6;Regular;Movist
+G58917296;Femenino;28;8;55.2;43.6;106;3.5;Bueno;Movist
+G58917297;Masculino;24;13;39.1;41.7;99;4;Bueno;Movist
+G58917298;Femenino;33;6;51.6;43.9;90.2;14.5;Pésimo;Movist
+G58917299;Femenino;21;7;44.1;37.8;102.5;3.1;Pésimo;Movist
+G58917300;Femenino;28;9;39;43.7;92.2;4.7;Excelente;Movist
+G58917301;Femenino;21;8;52.2;46.1;110.1;3.9;Pésimo;Movist
+G58917302;Masculino;29;3;53.6;37.6;96.5;6.6;Muy Bueno;Movist
+G58917303;Masculino;36;2;36.3;42;92;11.7;Pésimo;Movist
+Z75417304;Masculino;34;0;24.3;41.2;84.2;2.6;Bueno;Bitele
+Z75417305;Masculino;28;7;30.1;53.8;91.7;5.5;Pésimo;Bitele
+Z75417306;Masculino;28;4;23.8;43.6;74.1;2.7;Pésimo;Bitele
+Z75417307;Masculino;32;5;17.5;40.7;88.8;11.5;Regular;Bitele
+Z75417308;Masculino;24;3;29.9;48.5;91.6;0.5;Bueno;Bitele
+Z75417309;Masculino;34;4;36.3;57.7;80;1.3;Pésimo;Bitele
+Z75417310;Femenino;20;1;31.8;46;88.4;5.3;Pésimo;Bitele
+Z75417311;Femenino;34;3;33;49.9;78.5;1.2;Bueno;Bitele
+Z75417312;Masculino;20;5;31.7;47.5;88.3;1.7;Bueno;Bitele
+Z75417313;Femenino;29;2;31.4;59.6;85.6;20.5;Excelente;Bitele
+Z75417314;Masculino;31;2;26.9;55;88.6;3.3;Muy Bueno;Bitele
+Z75417315;Masculino;22;3;17.5;32.6;78.8;0.3;Regular;Bitele
+Z75417316;Masculino;38;3;29.9;37.6;81.6;1.7;Pésimo;Bitele
+Z75417317;Masculino;36;3;36.3;41.8;86.3;2.2;Muy Bueno;Bitele
+Z75417318;Masculino;33;2;31.8;36.3;83.8;4;Excelente;Bitele
+Z75417319;Masculino;27;7;33;24.3;90.7;16.9;Regular;Bitele
+Z75417320;Femenino;28;4;31.7;30.1;95.7;1.5;Bueno;Bitele
+Z75417321;Femenino;24;9;31.4;23.8;99.3;2.8;Pésimo;Bitele
+Z75417322;Masculino;33;5;26.9;17.5;83.3;4.6;Pésimo;Bitele
+Z75417323;Masculino;21;4;35.5;29.9;97.3;3.5;Excelente;Bitele
+Z75417324;Masculino;28;7;39.9;33.6;114.5;4;Pésimo;Bitele
+Z75417325;Masculino;21;5;39.3;52;106;14.5;Muy Bueno;Bitele
+Z75417326;Femenino;29;3;37.8;50.4;99;2.7;Pésimo;Bitele
+Z75417327;Masculino;26;4;43.7;36.2;90.2;11.5;Bueno;Bitele
+Z75417328;Masculino;40;8;46.1;39.8;102.5;0.5;Pésimo;Bitele
+Z75417329;Masculino;40;4;37.6;43.2;92.2;1.3;Pésimo;Bitele
+Z75417330;Masculino;30;6;42;52.2;110.1;5.3;Bueno;Bitele
+Z75417331;Masculino;27;4;43;53.6;96.5;1.2;Bueno;Bitele
+Z75417332;Masculino;28;5;44.8;36.3;88.3;1.7;Excelente;Bitele
+Z75417333;Masculino;24;3;37.6;31.8;85.6;20.5;Muy Bueno;Bitele
