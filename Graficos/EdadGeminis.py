@@ -5,7 +5,7 @@ Flujo del programa:
 2. Normaliza los nombres de columnas para utilizarlos en SQLite.
 3. Inserta los datos en una base SQLite temporal en memoria.
 4. Ejecuta una consulta SQL agrupada por edad.
-5. Muestra los resultados y genera un grafico de lineas.
+5. Muestra los resultados y genera un grafico con tres lineas.
 
 Este archivo no contiene clases. Utiliza funciones, que son bloques de codigo
 con un nombre y una tarea concreta. Separar las tareas en funciones facilita
@@ -105,6 +105,8 @@ def consultar_por_edad(df: pd.DataFrame) -> pd.DataFrame:
         query = """
             SELECT
                 Edad,
+                ROUND(AVG(Tiempo_enero), 2) AS media_enero,
+                ROUND(AVG(Tiempo_febrero), 2) AS media_febrero,
                 ROUND(AVG(Tiempo_enero + Tiempo_febrero), 2)
                     AS tiempo_medio_total,
                 ROUND(AVG(Llamadas), 2) AS media_llamadas,
@@ -122,30 +124,51 @@ def consultar_por_edad(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def mostrar_grafico(resultados: pd.DataFrame) -> None:
-    """Dibuja y muestra una linea con el promedio calculado por SQL.
+    """Dibuja tres lineas con los promedios calculados por SQL.
 
-    ``resultados`` debe contener las columnas Edad y tiempo_medio_total,
-    creadas por la consulta de ``consultar_por_edad``.
+    ``resultados`` contiene una fila por edad y las medias de enero, febrero
+    y del total de ambos meses.
     """
     # figsize define el ancho y alto del grafico en pulgadas.
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(10, 6))
 
-    # plot dibuja la linea. El eje X contiene edades y el eje Y los promedios.
-    # marker='o' muestra un punto en cada edad calculada.
+    # La primera linea representa la media del consumo de enero.
+    plt.plot(
+        resultados["Edad"],
+        resultados["media_enero"],
+        marker="o",
+        color="blue",
+        linewidth=2,
+        label="Medias de enero",
+    )
+
+    # La segunda linea representa la media del consumo de febrero.
+    plt.plot(
+        resultados["Edad"],
+        resultados["media_febrero"],
+        marker="s",
+        color="red",
+        linestyle="--",
+        linewidth=2,
+        label="Medias de febrero",
+    )
+
+    # La tercera linea suma los dos meses y muestra la media total.
     plt.plot(
         resultados["Edad"],
         resultados["tiempo_medio_total"],
-        marker="o",
-        color="#1f77b4",
+        marker="s",
+        color="green",
+        linestyle="--",
         linewidth=2,
-        label="Tiempo medio total (enero + febrero)",
+        label="Media del total",
     )
 
     # Los siguientes comandos hacen el grafico mas facil de interpretar.
-    plt.title("Duracion Media de Llamadas por Edad (Resultado SQL)")
+    plt.title("Consumos medios por edad")
     plt.xlabel("Edad")
-    plt.ylabel("Tiempo medio (minutos)")
-    plt.grid(True, linestyle="--", alpha=0.6)
+    plt.ylabel("Consumo")
+    plt.grid(True, linestyle=":", alpha=0.7)
     plt.legend()
     plt.tight_layout()
 
