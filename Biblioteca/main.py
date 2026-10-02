@@ -1,6 +1,9 @@
 import tkinter as tk
 
-from interfaz import BibliotecaApp
+try:
+    from .interfaz import BibliotecaApp
+except ImportError:
+    from interfaz import BibliotecaApp
 
 
 if __name__ == "__main__":

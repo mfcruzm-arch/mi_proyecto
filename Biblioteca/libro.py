@@ -148,30 +148,45 @@ class LibroCRUD:
 
     def obtener_todos_los_libros(
         self,
-        ordenar_por: str = "id",
-        descendente: bool = False,
+        ordenar_por: str | list[tuple[str, bool]] | None = "id",
+        descendente: bool | None = None,
     ) -> list[dict[str, Any]]:
-        """Devuelve todos los libros ordenados por la columna indicada."""
+        """Devuelve todos los libros ordenados por una o varias columnas."""
         columnas_ordenables = {
             "id": "l.id",
             "titulo": "l.titulo",
             "autor": "l.autor",
             "genero": "g.nombre",
+            "genero_id": "g.nombre",
             "anio": "l.anio",
             "paginas": "l.paginas",
             "valoracion": "l.valoracion",
             "estado": "l.estado",
             "favorito": "l.favorito",
+            "notas": "l.notas",
         }
-        if ordenar_por not in columnas_ordenables:
-            raise ValueError(f"Columna no ordenable: {ordenar_por}")
 
-        direccion = "DESC" if descendente else "ASC"
         sql = """
             SELECT l.*, g.nombre AS genero_nombre
             FROM libros AS l
             LEFT JOIN generos AS g ON l.genero_id = g.id
-        """ + f" ORDER BY {columnas_ordenables[ordenar_por]} {direccion}"
+        """
+
+        if isinstance(ordenar_por, str):
+            if ordenar_por not in columnas_ordenables:
+                raise ValueError(f"Columna no ordenable: {ordenar_por}")
+            direccion = "DESC" if (descendente is True) else "ASC"
+            sql += f" ORDER BY {columnas_ordenables[ordenar_por]} {direccion}"
+        elif isinstance(ordenar_por, list):
+            partes: list[str] = []
+            for columna, es_descendente in ordenar_por:
+                if columna not in columnas_ordenables:
+                    raise ValueError(f"Columna no ordenable: {columna}")
+                direccion = "DESC" if es_descendente else "ASC"
+                partes.append(f"{columnas_ordenables[columna]} {direccion}")
+            if partes:
+                sql += " ORDER BY " + ", ".join(partes)
+
         filas = self.obtener_conexion().execute(sql).fetchall()
         return [dict(fila) for fila in filas]
 
